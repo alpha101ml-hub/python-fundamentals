@@ -110,14 +110,64 @@
 #     def stc_method(param1, param2):
 #         return param1 + param2
 
-class PlayerCharacter:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class PlayerCharacter:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
         
-    def run(self):
-        return self
+#     def run(self):
+#         return self
 
-player1 = PlayerCharacter('andrei', 100)
+# player1 = PlayerCharacter('andrei', 100)
 
-print(player1.run())
+# print(player1.run())
+
+
+# Ecapsulation
+# class PlayerCharacter:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+        
+#     def run(self):
+#         print('run')
+        
+#     def speak(self):
+#         print(f'my name is {self.name}, and I am {self.age} years old')
+        
+
+# player1 = PlayerCharacter('andrei', 100)
+# player1.speak()
+# 'helllo'.capitalize()
+# print(player1.name)
+# print(player1.age)
+
+# player2 = {'name': 'andrie', 'age': 100}
+# print(player2['name'])
+# print(player2['age'])
+
+# Abstraction
+# class PlayerCharacter:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+        
+#     def run(self):
+#         print('run')
+        
+#     def speak(self):
+#         print(f'my name is {self.name}, and I am {self.age} years old')
+        
+# player1 = PlayerCharacter('andrei', 100)
+# # print((1,2,3,1).count(1))
+# # print(len(1,2,3,1))
+
+# # camera.takepicture()
+
+# player1.name = '!!!'
+# player1.speak = 'BOOO'
+
+# print(player1.speak)
+
+# Private vs Public variable
+
