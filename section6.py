@@ -170,4 +170,76 @@
 # print(player1.speak)
 
 # Private vs Public variable
+# private?
+# class PlayerCharacter:
+#     def __init__(self, name, age): # __init__ Dunder Method
+#         self._name = name
+#         self._age = age
+        
+#     def run(self):
+#         print('run')
+        
+#     def speak(self):
+#         print(f'my name is {self._name}, and I am {self._age} years old')
+        
 
+# player1 = PlayerCharacter('andrei', 100)
+# # player1.name = '!!!'
+# # player1.speak = 'BOOO'
+# print(player1.speak())
+
+#Inheritance
+
+# class User:
+#     def sign_in(self):
+#         print('logged in')
+        
+# class Wizard(User):
+#     def __init__(self, name, power):
+#         self.name = name
+#         self.power = power
+        
+#     def attack(self):
+#         print(f' attacking with power of {self.power}')
+
+# class Archer(User):
+#     def __init__(self, name, num_arrows):
+#         self.name = name
+#         self.num_arrows = num_arrows
+        
+#     def attack(self):
+#         print(f' attacking with arrows: arrows left= {self.num_arrows}')
+
+# wizard1 = Wizard('Merlin', 50)
+# archer1 = Archer('Robin', 100)
+# # print(wizard1.sign_in())
+# wizard1.attack()
+# archer1.attack()
+
+# inheritance 2
+class User():
+    def sign_in(self):
+        print('logged in')
+        
+class Wizard(User):
+    def __init__(self, name, power):
+        self.name = name
+        self.power = power
+        
+    def attack(self):
+        print(f' attacking with power of {self.power}')
+    
+class Archer(User):
+    def __init__(self, name, num_arrows):
+        self.name = name
+        self.num_arrows = num_arrows
+        
+    def attack(self):
+        print(f' attacking with arrows: arrows left= {self.num_arrows}')
+        
+wizard1 = Wizard('Merlin', 60)
+# archer1 = Archer('Robin', 100)
+
+# isinstance(instace, Class)
+print(isinstance(wizard1, Wizard))
+print(isinstance(wizard1, User))
