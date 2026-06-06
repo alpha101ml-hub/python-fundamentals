@@ -1,0 +1,24 @@
+standard way to read a file
+
+with open('test.txt') as myfile:
+    print(myfile.readlines())  # read all lines  but make sure they are in one box with \n
+
+['Hi My name is Kratik Jarwal\n', ':)\n', 'Hello there']    
+
+with open('test.txt', mode='r+') as myfile:
+    text = myfile.write('hey it\' me!')
+    print(text)
+
+wrote 11 characters by overriding it which causes it to make changes in the file
+
+with open('tests.txt', mode='a') as myfile:
+    text = myfile.write('hey it\' me!')
+    print(text)
+
+add it to the end of the file without making changes to it
+
+with open('sad.txt', mode='w') as myfile:
+    text = myfile.write('hey it\' me!')
+    print(text)
+
+create an another file for it

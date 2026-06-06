@@ -1,0 +1,41 @@
+File I/O 
+
+I/O simply means, I want you to input something from the outside world and output something into the outside world.
+
+input image
+out compressed image
+
+open
+
+myfile = open('1.txt')
+
+print(myfile)
+
+<_io.TextIOWrapper name='1.txt' mode='r' encoding='cp1252'>
+
+
+myfile = open('1.txt')
+
+print(myfile.read()) - read the file and print it
+
+myfile = open('1.txt')
+
+print(myfile.read())
+myfile.seek(0)
+print(myfile.read())
+
+read the file and print it and seek here help it start again from start then print it again
+
+
+myfile= open('test.txt')
+print(myfile.readline())  # read line by line
+print(myfile.readline())   # read line by line
+print(myfile.readline())    # read line by line
+
+myfile= open('test.txt')
+
+print(myfile.readlines())  # read all lines  but make sure they are in one box with \n
+
+['Hi My name is Kratik Jarwal\n', ':)\n', 'Hello there']
+
+myfile.close()  # close the file
