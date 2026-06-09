@@ -1,0 +1,9 @@
+with open('app\sad.txt', mode ='r') as my_file:
+    print(my_file.read())
+
+Terminal:
+ls 
+python3 scripty.py
+pwd
+
+pathlib - OBJECT ORIENTED FILESYSTEM PATHS
