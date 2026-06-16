@@ -1,0 +1,48 @@
+try:
+    with open('./sample.txt', mode='r') as myfile:
+        print(myfile.read())
+except FileNotFoundError as err:
+    print("File not found")
+
+In Terminal:
+python3 5.py
+
+Run it:
+My name is Kratik Jarwal
+
+
+
+from translate import Translator
+
+translator = Translator(to_lang="ja")
+
+try:
+    with open('./sample.txt', mode='r') as myfile:
+        text = myfile.read()
+        translation = translator.translate(text)
+        print(translation)
+except FileNotFoundError as err:
+    print("File not found")
+
+
+In termainal or run it as you want:
+python3 5.py
+
+
+
+from translate import Translator
+
+translator = Translator(to_lang="ja")
+
+try:
+    with open('./sample.txt', mode='r') as myfile:
+        text = myfile.read()
+        translation = translator.translate(text)
+        print(translation)
+        with open('./test-ja.txt', mode='w', encoding='utf-8') as myfile2:
+            myfile2.write(translation)
+except FileNotFoundError as e:
+    print("File not found")
+
+
+this will read the file from sample then translate in japanese then create a new file test-ja.txt which has the translated file
